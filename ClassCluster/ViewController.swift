@@ -13,6 +13,17 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
+    
+    let cell: Cell = Cell.cellWithGreenBackground()
+    cell.doYourThing()
+    
+    let anotherCell: Cell = Cell.cellWithRedBackground()
+    anotherCell.doYourThing()
+    
+    //The compiler won't allow any of these:
+    //let cell = Cell.GreenBackgroundCell()
+    //let cell = GreenBackgroundCell()
+    
   }
 
   override func didReceiveMemoryWarning() {
